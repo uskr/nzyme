@@ -43,7 +43,7 @@ impl Dot11Broker {
     }
 
     #[allow(unused_assignments)] // for the last cursor assignment, which is good to avoid bugs when extending.
-    fn handle(data: &Arc<Dot11RawFrame>, bus: &Arc<Bus>) {
+    pub fn handle(data: &Arc<Dot11RawFrame>, bus: &Arc<Bus>) {
         // Parse header.
         if data.data.len() < 4 {
             trace!("Received WiFi frame is too short. [{:?}]", data);

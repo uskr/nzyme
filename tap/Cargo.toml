@@ -40,6 +40,10 @@ conf-files = [
     "etc/nzyme/nzyme-tap.conf"
 ]
 
+[[bin]]
+name = "nzyme-pcap-test"
+path = "src/nzyme-pcap-test.rs"
+
 [dependencies]
 hex = "0.4.3"
 pcap = "0.10.1"
